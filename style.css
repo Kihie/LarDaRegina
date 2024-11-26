@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4e3;
+    color: #333;
+}
+
+header {
+    background-color: #f08c42;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.about, .rescues, .adoption, .contact {
+    background-color: #fff2e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.animal {
+    background-color: #f08c42;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.animal img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #f08c42;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 30px;  
+}
+
+.animal {
+    background-color: #f08c42;
+    padding: 10px;  
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    width: 200px; 
+}
+
+.animal img {
+    max-width: 150px;  
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.rescues h2 {
+    text-align: center;
+}
