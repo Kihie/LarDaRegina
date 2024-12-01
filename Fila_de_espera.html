@@ -24,23 +24,12 @@
             <h3>Preencha os campos abaixo</h3>
 
             <div class="contact-info">
-                <form class="filaAdocao">
-                    Nome: <input type="text" style="margin: 4px;"> <br>
-            
-                    Data de Nasc: <input type="date" lang="pt-BR" style="margin: 4px;"> <br>
-            
-                    Telefone:<input type="text" style="margin: 4px;"> <br>
-            
-                    Email: <input type="text" style="margin: 4px;"> <br>                    
-
-                    <label for="textType">Tipo de Animal</label>
-                    <select name="textType" id="textType">
-                        <option value="" disabled selected>Escolha uma opção</option>
-                        <option value="cachorro">Cachorro</option>
-                        <option value="gato">Gato</option>
-                    </select> <br><br><br>
-            
-                    <button style="display: inline-block; padding: 10px;">Enviar</button> <br><br><br>
+                <form class="filaAdocao" name="form1" method="post" action="grava.jsp">
+                    Nome: <input type="text" name="txtNome" style="margin: 4px;"> <br>
+                    Idade: <input type="text" name="txtIdade" style="margin: 4px;"> <br>
+                    Telefone: <input type="text" name="txtFone" style="margin: 4px;"> <br>
+                    Email: <input type="text" name="txtEmail" style="margin: 4px;"> <br>
+                    <input type="submit" value="Gravar">
                 </form>    
             </div>
             
