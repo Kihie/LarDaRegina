@@ -27,7 +27,7 @@
             </div>
             <div class="photos">
                 <div class="photo">
-                    <img src="fachada.jpg" alt="Fachada da ONG">
+                    <img src="gravado.jpg"Fachada da ONG">
                 </div>
             </div>
         </section>
