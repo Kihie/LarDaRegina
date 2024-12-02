@@ -35,31 +35,32 @@
             <div>
                 <h2>Aqui estao os dados Armazenados</h2>
                 <%
-            //variaveis para acessar o banco de dados
+
+            // Variável para ter acesso ao banco de dados
             String database = "lardaregina"; 
             String endereco = "jdbc:mysql://localhost:3306/" + database ; 
             String usuario  = "root"; 
             String senha    = "";
 
-            //Driver
+            //Driver do MySQL
             String driver = "com.mysql.jdbc.Driver" ;
 
-            //Carregar o driver na memoria
+            // Carrega o Driver da Memoria
             Class.forName( driver ) ;
 
-            //Cria uma variavel para conexao com o banco de dados
+            // Cria uma conexão com banco de Dados
             Connection conexao;
 
-            //Abrir a conexao com o banco
+            // Abre a conexão com o Banco de Dados
             conexao = DriverManager.getConnection( endereco , usuario, senha);
 
-            //comando para consultar no banco
+            // Para consultar o banco de dados
             String sql = "SELECT * FROM fila_espera" ;
 
-            //cria a variavel do tipo Statement
+            //Cria uma variavel do tipo Statement
             PreparedStatement stm = conexao.prepareStatement( sql );
 
-            //cria a variavel do tipo ResultSet
+            // Variavel Result para acessar os resultados do banco de dados
             //para armazenar os dados que estão banco
             ResultSet dados  = stm.executeQuery() ;
 
