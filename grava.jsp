@@ -40,34 +40,34 @@
 </html>
 
 <%
-    //cria as variaveis e armazena as informações digitadas pelo usuário
+    // Cria as variaveis e armazena as informações do usuário
     String vnome  = request.getParameter("txtNome");
     int vidade =    Integer.parseInt(request.getParameter("txtIdade"));
     String vtelefone = (request.getParameter("txtFone"));
     String vemail = request.getParameter("txtEmail");
 
-    //variaveis para acessar o banco de dados
+    // Variável para ter acesso ao banco de dados
     String database = "lardaregina"; 
     String endereco = "jdbc:mysql://localhost:3306/" + database ; 
     String usuario  = "root"; 
     String senha    = "";
 
-    //Driver 
+    //Driver do MySQL
     String driver = "com.mysql.jdbc.Driver" ;
 
-    //Carrega o driver na memoria
+    // Carrega o Driver da Memoria
     Class.forName(driver) ;
 
-    //Cria a variavel para conectar com o banco
+    // Cria uma conexão com banco de Dados
     Connection conexao ;
 
-   //Abrir a conexao com o banco
+   // Abre a conexão com o Banco de Dados
    conexao = DriverManager.getConnection( endereco , usuario, senha) ;
 
-   //Varival para o comando Insert do SQL
+   // Variavel para inserir no MySQL
    String sql = "INSERT INTO fila_espera (nome, idade, telefone, email) values (?, ?, ?, ?)" ;
 
-   //Cria a variavel Statement para executar o SQL
+   // Cria uma variavel do tipo Statement
    PreparedStatement stm = conexao.prepareStatement(sql) ;
    stm.setString( 1 , vnome ) ;
    stm.setInt( 2 , vidade ) ;
